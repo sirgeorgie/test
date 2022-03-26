@@ -29,17 +29,20 @@ public class BlankScreen extends Screen {
         listPerson.add(new Person(40,"Zakaria","Stott",Person.Gender.FEMALE));
         listPerson.add(new Person(50,"Layla-Rose","Burn",Person.Gender.FEMALE));
 
+        //sorts the list of persons by Firstname and Lastname
         Collections.sort(listPerson);
 
         log.info("List result:" + listPerson);
 
+        //Grouping the list of persons by gender
         Map<Person.Gender, List<Person>> personPerTypes = listPerson.stream()
                 .collect(groupingBy(Person::getGender));
 
         log.info("Map: "+personPerTypes);
 
+        //Find a collection of persons that are older than or equal to 30.
         List<Person> listAge30plus = listPerson.stream()
-                .filter(p -> p.getAge() > 30)
+                .filter(p -> p.getAge() >= 30)
                 .collect(Collectors.toList());
 
         log.info("List result Age>30:" + listAge30plus);
