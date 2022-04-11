@@ -1,3 +1,3 @@
-# test
+# Devops Project
 
-[![Dependency Review](https://github.com/sirgeorgie/test/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/sirgeorgie/test/actions/workflows/dependency-review.yml)
+[![Java Build Gradle](https://github.com/sirgeorgie/test/actions/workflows/gradle.yml/badge.svg)](https://github.com/sirgeorgie/test/actions/workflows/gradle.yml)
