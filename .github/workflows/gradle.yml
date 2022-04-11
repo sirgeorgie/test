@@ -29,4 +29,4 @@ jobs:
         java-version: '8'
         distribution: 'temurin'
     - name: Build with Gradle
-      run: gradle bootRun
+      run: gradle bootJar
